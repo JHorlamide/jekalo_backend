@@ -1,10 +1,10 @@
 import mongoose from "mongoose";
 import debug from "debug";
-import config from "config";
 const log: debug.IDebugger = debug("app:mongoose-service");
 
 class MongooseService {
-  private dbUri = config.get<string>("dbUri");
+  private dbUri =
+    "mongodb+srv://jekalo:olamide@jekalo.jvn3w.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
   private count = 0;
   //   private mongooseOptions = {
   //     useNewUrlParser: true,
